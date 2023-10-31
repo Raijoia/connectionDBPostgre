@@ -9,7 +9,12 @@ package com.mycompany.bancosql;
  * @author 82318841
  */
 public class ConnectionFactory {
-//    private static final String host = '';
-//    
-//    String sql = 'a';
+    private String host, port, db, user, password;
+    public ConnectionFactory(String host, String port, String db, String user, String password) {
+        this.host = host;
+        this.port = port;
+        this.db = db;
+        this.user = user;
+        this.password = password;
+    }
 }
