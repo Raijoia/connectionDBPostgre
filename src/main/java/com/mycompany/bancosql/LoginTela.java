@@ -4,6 +4,7 @@
  */
 package com.mycompany.bancosql;
 
+import java.util.Properties;
 import javax.swing.JOptionPane;
 
 /**
@@ -11,12 +12,18 @@ import javax.swing.JOptionPane;
  * @author 82318841
  */
 public class LoginTela extends javax.swing.JFrame {
+    private Properties properties;
 
     /**
      * Creates new form LoginTela
      */
     public LoginTela() {
         initComponents();
+    }
+    
+    public LoginTela(Properties p){
+        this();
+        this.properties = p;
     }
 
     /**

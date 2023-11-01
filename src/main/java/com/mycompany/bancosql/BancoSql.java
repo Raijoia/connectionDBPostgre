@@ -16,7 +16,11 @@ public class BancoSql {
 
     public static void main(String[] args) throws Exception{
         Properties properties = new Properties();
-        properties.load(new FileInputStream(new File("conf.properties")));
-        System.out.println(properties.getProperty("HOST"));
+        properties.load(new FileInputStream(new File("db.properties")));
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new LoginTela(properties).setVisible(true);
+            }
+        });
     }
 }
